@@ -5,32 +5,45 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script defer src="./script.js"></script>
+
   <title>Página Secundária</title>
+
 </head>
 
 <body>
-  <section>
-    <nav>
-      <ul>
-        <li>APOD</li>
-        <li>NASA</li>
-        <li>SOBRE</li>
-        <li>FAQ</li>
-      </ul>
-    </nav>
-  </section>
-  <section>
-    <img>
-    <form action="">
-      <div></div>
-      <input id="nome" type="text" placeholder="Insira seu primeiro nome">
-      <input id="data" type="date">
-      <button id="explore">Explore<i class="uil uil-rocket"></i></button>
-    </form>
-    <div>
+  <header>
+    <section>
+      <nav>
+        <ul>
+          <li>APOD</li>
+          <li>NASA</li>
+          <li>SOBRE</li>
+          <li>FAQ</li>
+        </ul>
+      </nav>
+    </section>
+  </header>
 
+  <main>
+    <div class="containerdate">
+      <form action="">
+        <input name="date" type="date" class="input-date" id="date">
+        <button id="botao">enviar</button>
+      </form>
     </div>
-  </section>
+    <div class="container">
+      <img id="imagem" src="" alt="">
+      <iframe id="video" height="400px" width="490px" src=""></iframe>
+      <div class="info">
+        <h3 id="titulo"></h3>
+        <p id="texto"></p>
+      </div>
+    </div>
+  </main>
+
+
 </body>
 
 </html>
