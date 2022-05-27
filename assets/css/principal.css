@@ -6,18 +6,73 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-image: url(../img/AdobeStock_365247499.jpeg);
+  background-image: url(../img/terra.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
+header {
+  height: 10vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+}
+
 .cabecalho {
-  background: aliceblue;
+  display: inline-block;
+  align-items: center;
+}
+
+button {
+  padding: 1.3em 3em;
+  margin: 1.5rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  box-shadow: 0px 15px 20px #022e57;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+a {
+  text-decoration: none;
+}
+
+#date,
+#botao {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 2px solid #72757e;
+  border-bottom: 4px solid #72757e;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#date:hover {
+  border-color: #7f5af0;
+  clip-rule: circle(120px at center);
+  transition: 0.5s;
 }
 
 .container {
@@ -27,22 +82,38 @@ body {
   justify-content: space-around;
 }
 
-#imagem, #video {
-  background: aliceblue;
-  border: none;
+#imagem {
+  border-radius: 10px;
+}
+
+#titulo {
+  width: 100%;
+  height: 10%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: #000 2px 3px 2px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+#texto {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .info {
+  background: aliceblue;
+  border-radius: 20px;
+  border-radius: 20px;
+  transition: 1s;
+}
 
-    background: aliceblue;
-    border-radius: 20px;
-    border-radius: 20px;
-    transition: 1s;}
-  
-
-
-#titulo, #texto {
+#titulo,
+#texto {
   text-align: center;
-  color: rgb(8, 130, 238);}
-
-
+  color: rgb(8, 130, 238);
+}
